@@ -1,0 +1,30 @@
+-- FIND AVERAGE LENGTH OF ALL TRACKS IN MILLISECONDS --
+/* SELECT AVG(Milliseconds) AS avg_length_all_tracks FROM Track; */
+
+-- FIND NUMBER OF INVOICES IN USA --
+/* SELECT COUNT(*) AS USA_orders FROM Invoice WHERE BillingCountry = 'USA'; */
+
+-- MAKE A LIST OF ALL THE FIRST NAMES OF CUSTOMERS WITH 'A' NAMES --
+/* SELECT FirstName FROM Customer WHERE FirstName LIKE 'A%'; */
+
+-- MAKE LIST OF 10 LONGEST TRACKS --
+/* SELECT * FROM Track ORDER BY Milliseconds DESC LIMIT 10; */
+
+-- MAKE LIST OF 20 SHORTEST TRACKS --
+/* SELECT * FROM Track ORDER BY Milliseconds LIMIT 20; */
+
+-- FIND ALL CUSTOMERS IN CALIFORNIA OR WASHINGTON --
+/* SELECT * FROM Customer WHERE State IN ('CA', 'WA'); */
+
+-- FIND ALL CUSTOMERS IN CA, WA, FL, UT, AZ --
+/* SELECT * FROM Customer WHERE State IN ('CA', 'WA', 'FL', 'UT', 'AZ'); */
+
+-- INSERT ARTIST INTO DATABASE --
+/* INSERT INTO Artist (Name) VALUES ('Galantis'); */
+
+-- INSERT SELF INTO DATABASE --
+/* INSERT INTO Customer (FirstName, LastName, City, State, Country, Email) 
+VALUES ('Larry', 'FakeName', 'Dallas', 'TX', 'USA', 'Fake@fmail.com'); */
+
+-- FIND ALL PLAYLISTS THAT START WITH 'CLASSICAL' --
+/* SELECT * FROM Playlist WHERE Name LIKE 'Classical%'; */
